@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+  <script src="js/frameworks/jquery-1.8.3.js"></script>
+  <style>
+    body {
+      width: 400px;
+      height: 120px;
+      margin: 5px;
+    }
+    .wrapper{
+      padding: 0;
+      border: 1px solid #eee;
+      border-radius: 2px;
+      margin-bottom: 5px;
+    }
+    .head{
+      margin: 0;
+      padding: 8px 12px;
+      background: #EFEFEF;
+      display: block;
+      overflow: auto;
+      border-radius: 2px;
+    }
+    .heading{
+      margin: 0;
+      float: left;
+    }
+    .heading .ttl{
+      font-size:15px;
+      display: inline-block;
+      margin: 5px;
+      color: green;
+      display: inline-block;
+    }
+    .info-row{
+      margin: 10px 0;
+      overflow: auto;
+      clear: both;
+      padding-top: 5px;
+    }
+    .validation-msg{
+      text-align: center;
+      border-top: solid 1px #eee;
+      padding: 10px;
+      margin-bottom: 0px;
+      clear: both;
+    }
+    .status{
+      color: #333;
+      padding-top: 10px;
+      line-height: 20px;
+    }
+    .success-wrap{
+      margin:0 auto;
+    }
+    .error-wrap{
+      margin:0 auto;
+    }
+    .extn-dtls{
+      float: left;
+      width: 49%;
+      display: inline-block;
+      text-align: center;
+    }
+    .ref{
+      margin: 10px;
+      display: inline-block;
+      color: #06c;
+      outline: none;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="head">
+        <h4 class="heading">
+          <span style="float:left;"><img src="img/32.png"></span>
+          <span class="ttl">Freshdesk Developer Extension</span>
+        </h4>
+      </div>
+
+      <div class="info-row">
+        <div class="extn-dtls" style="border-right: solid 1px #eee;">
+          <img src="img/info.svg" width="24">
+          <p>Extn. Version</p>
+          <p id="browser-extn-version"></p>
+        </div>
+
+        <div class="extn-dtls">
+          <img src="img/sdk.svg" width="24">
+          <p>SDK Version</p>
+          <p id="sdk-version"></p>
+        </div>
+      </div>
+
+      <div class="validation-msg" id="sdk-compat-msg"></div>
+    </div>
+    
+    <script src="js/extension/popup.js"></script>
+  </body>
+</html>
+
