@@ -1,2 +1,5 @@
 *.crx
 *.pem
+build/*
+node_modules/*
+key.pem
