@@ -1,0 +1,9 @@
+plugins {
+  id 'net.researchgate.release' version '2.3.4'
+}
+
+task build {
+  doLast {
+    println 'Build completed.'
+  }
+}
