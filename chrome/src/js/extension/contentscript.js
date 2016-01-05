@@ -21,18 +21,7 @@ jQuery.fn.onAvailable = function(fn){
 var ContentScript = Class.create({
   initialize: function() {
     this.EXTN_DEV_PARAMS = "EXTN_DEV_PARAMS";
-    var _that = this,
-        isInitiated = false;
-
-    // This logic is used to inject a script into the page to trigger the event sidebar_loaded manually
-    // -- applies only to ticket page.
-    if(!isInitiated) {
-      var script = document.createElement('script');
-      jQuery(script).attr("id", "timeoutscript");
-      jQuery(script).append(document.createTextNode("if(typeof page_type !== 'undefined' && page_type == 'ticket') { jQuery(document).trigger('sidebar_loaded'); }"));
-      (document.body || document.head || document.documentElement).appendChild(script);
-      _that.isInitiated = true;
-    }
+    var _that = this;
 
     //receives message from extension background.js -- following is used for injecting app code in helpkit
     chrome.extension.onMessage.addListener(function(message, sender, sendResponse) {
@@ -60,7 +49,6 @@ var ContentScript = Class.create({
     // receives message from Helpkit about its readiness for appcode to inject
     if(event.data.type && (event.data.type == "FA_INITIATE")) {
       console.log("INITIATES");
-      this.isInitiated = true;
       this.getDomHelperData();
     }
 

@@ -29,7 +29,8 @@
         "js/frameworks/prototype-1.6.js",
         "js/extension/contentscript.js",
         "js/freshdesk/freshapp.js"
-      ]
+      ],
+      "run_at" : "document_start"
     }
   ],
   "homepage_url": "https://developer.freshdesk.com/",
