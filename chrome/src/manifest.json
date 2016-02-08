@@ -17,7 +17,8 @@
   "background": {
     "scripts" : [
       "js/frameworks/prototype-1.6.js", 
-      "js/extension/background.js"
+      "js/extension/background.js",
+      "js/extension/websocket.js"
     ],
     "persistent" : true
   },
