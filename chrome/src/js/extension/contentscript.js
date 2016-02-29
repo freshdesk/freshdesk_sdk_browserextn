@@ -86,11 +86,15 @@ var ContentScript = Class.create({
                          requester: requester,
                          current_user: current_user
                        }, "*");
+    var flag = false;
     jQuery(window).on("message", function(event) {
       var evt= event.originalEvent,
         msg_type = evt.data.type;
       if(msg_type == "EXTN_SDK_DEV"){
-        eval('('+evt.data.callback+')();');
+        if(!flag){
+          flag = true;
+          eval('('+evt.data.callback+')();');
+        }
       }
     });
   }
