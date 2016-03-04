@@ -15,7 +15,7 @@ var FAWebSocket = Class.create({
     };
     ws.onmessage = function(e){
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        if (tabs[0].url.match(ticket_uri) || tabs[0].url.match(contact_uri)) {
+        if (tabs[0].url.match(that.ticket_uri) || tabs[0].url.match(that.contact_uri)) {
           chrome.tabs.reload(tabs[0].id);
         }
       });
