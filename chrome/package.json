@@ -2,11 +2,13 @@
   "name": "freshplug-developer-extension",
   "version": "0.0.0",
   "description": "A chrome extension for testing Freshplugs",
-  "main": "Gruntfile.js",
   "dependencies": {
-    "grunt": "~0.4.5",
-    "time-grunt": "~1.2.1",
-    "grunt-contrib-clean": "0.5.x",
-    "grunt-crx": "~1.0.3"
+    "gulp-install": "^0.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-crx-pack": "^1.0.1",
+    "gulp-zip": "^3.2.0"
   }
 }

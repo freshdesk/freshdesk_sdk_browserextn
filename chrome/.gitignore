@@ -3,3 +3,4 @@
 build/*
 node_modules/*
 key.pem
+**/*.DS_Store
