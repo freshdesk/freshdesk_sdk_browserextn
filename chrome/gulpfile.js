@@ -5,7 +5,16 @@ var clean = require('gulp-clean');
 var crx = require('gulp-crx-pack');
 var manifest = require('./src/manifest.json');
 
+// Existence check for key.pem:
+try {
+  fs.accessSync('key.pem', fs.F_OK);
+}
+catch(err) {
+  console.error('key.pem missing!');
+  process.exit(1);
+}
 
+// Build tasks:
 gulp.task('crx', function() {
   return gulp.src('./src')
     .pipe(crx({
