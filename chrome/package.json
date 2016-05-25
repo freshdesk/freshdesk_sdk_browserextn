@@ -1,5 +1,5 @@
 {
-  "name": "freshplug-developer-extension",
+  "name": "freshdesk-developer-extension",
   "version": "0.0.0",
   "description": "A chrome extension for testing Freshplugs",
   "dependencies": {

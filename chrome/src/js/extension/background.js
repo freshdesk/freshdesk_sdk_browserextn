@@ -1,4 +1,4 @@
-var FreshplugDeveloperExtension =  Class.create({
+var FreshdeskDeveloperExtension =  Class.create({
   initialize: function() {
     this.extnVersion = chrome.runtime.getManifest().version,
     _that = this;
@@ -56,7 +56,7 @@ var FreshplugDeveloperExtension =  Class.create({
       }
 
       //sends request to local SDK server
-      xhr.open("POST", "http://localhost:10001/plug/", true);
+      xhr.open("POST", "http://localhost:10001/app/", true);
       xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
       xhr.setRequestHeader('FAExtnVersion', _that.extnVersion); // to check extn's version compatibility at SDK server.
 
@@ -77,4 +77,4 @@ var FreshplugDeveloperExtension =  Class.create({
 
 });
 
-var freshplugDeveloperExtension = new FreshplugDeveloperExtension();
+var freshdeskDeveloperExtension = new FreshdeskDeveloperExtension();

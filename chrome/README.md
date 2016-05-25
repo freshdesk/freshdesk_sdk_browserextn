@@ -1,10 +1,10 @@
-# Google Chrome Extension for Plugs
+# Google Chrome Extension for Apps
 
-To enable local testing of plugs.
+To enable local testing of apps.
 
 ## Run
 
-Open Google Chrome. Visit [chrome://extensions](chrome://extensions). Select *Developer mode* checkbox. Click on the button *Load unpacked extension...* button, and browse to the `src/` directory. This extension will be loaded. Visit the plug page to test your plug.
+Open Google Chrome. Visit [chrome://extensions](chrome://extensions). Select *Developer mode* checkbox. Click on the button *Load unpacked extension...* button, and browse to the `src/` directory. This extension will be loaded. Visit the app page to test your app.
 
 ## Using Grunt to package the Chrome Extension
 
