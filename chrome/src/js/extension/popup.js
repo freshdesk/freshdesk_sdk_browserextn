@@ -1,3 +1,6 @@
+/* Copyright (C) 2016 Freshdesk, Inc.
+This source code is a part of the Fresh SDK and is covered by the our license terms. For details about this license, please read the LICENSE.txt which is bundled with this source code. */
+
 var browserExtnVerPH = document.getElementById('browser-extn-version');
 var browserExtnVer = chrome.runtime.getManifest().version;
 
@@ -37,7 +40,6 @@ function sdkVersionCompatCheck() {
     function(data) {
       sdkCompatMsgPH.innerHTML =  "<div class='success-wrap'><img src='img/smiley-happy.svg' class='svg'></div>"+
                                   "<div class='status'>All Good! Happy Coding!</div>";
-      chrome.browserAction.setBadgeText({text: ''});
       jQuery('.validation-msg').addClass('success');
     }
   )
@@ -51,7 +53,6 @@ function sdkVersionCompatCheck() {
         msg = "<div class='status'>Please start your SDK server.</div>";
       }
       sdkCompatMsgPH.innerHTML = "<div class='error-wrap'><img src='img/notice-o.svg' class='svg'></div>"+msg;
-      chrome.browserAction.setBadgeText({text: 'X'});
       jQuery('.validation-msg').addClass('error');
     }
   );
