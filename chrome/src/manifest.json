@@ -5,10 +5,10 @@
   "description": "Test and debug Freshdesk SDK apps",
   "version": "1.0.0",
   "icons": {
-    "32": "img/32.png", 
-    "48": "img/48.png", 
+    "128": "img/128.png",
     "96": "img/96.png",
-    "128": "img/128.png"
+    "48": "img/48.png",
+    "32": "img/32.png"
   },
   "browser_action": {
     "default_icon": "img/32.png",
