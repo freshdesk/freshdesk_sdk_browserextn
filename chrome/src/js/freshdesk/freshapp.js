@@ -1,9 +1,7 @@
 /* Copyright (C) 2016 Freshdesk, Inc.
 This source code is a part of the Freshdesk SDK and is covered by the our license terms. For details about this license, please read the LICENSE.txt which is bundled with this source code. */
 
-var FreshApp = Class.create({
-  initialize: function(){
-  },
+var LocalTesting = Class.create({
   run: function(callback){
     var msg = {
       type: "EXTN_SDK_DEV",
@@ -13,4 +11,4 @@ var FreshApp = Class.create({
   }
 });
 
-var Freshapp = new FreshApp();
+var Localtesting = new LocalTesting();

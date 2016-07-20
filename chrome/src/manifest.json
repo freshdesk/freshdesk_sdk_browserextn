@@ -3,7 +3,7 @@
   "name": "Freshdesk Developer Extension",
   "short_name": "FreshdeskSDK",
   "description": "Test and debug Freshdesk SDK apps",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "icons": {
     "128": "img/128.png",
     "96": "img/96.png",

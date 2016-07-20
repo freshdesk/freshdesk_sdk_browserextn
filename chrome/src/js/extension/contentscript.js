@@ -96,7 +96,8 @@ var ContentScript = Class.create({
       if(msg_type == "EXTN_SDK_DEV"){
         if(!flag){
           flag = true;
-          eval('('+evt.data.callback+')();');
+          eval(evt.data.callback);
+          jQuery(document).trigger("dom_helper_loaded");
         }
       }
     });

@@ -7,7 +7,7 @@ This source code is a part of the Freshdesk SDK and is covered by the our licens
   <script src="js/frameworks/jquery-1.8.3.js"></script>
   <style>
     body {
-      width: 320px;
+      width: 330px;
       height: 160px;
       margin: 0;
     }
@@ -43,7 +43,8 @@ This source code is a part of the Freshdesk SDK and is covered by the our licens
       display: inline-block;
       text-align: center;
       font-size: 12px;
-    } 
+      margin-bottom: 15px;
+    }
     .dev{
       
     }
@@ -62,11 +63,24 @@ This source code is a part of the Freshdesk SDK and is covered by the our licens
       text-align: center;
       padding-top: 5px;
     }
-    .extn-dtls span{
-      font-size: 10px;
-    }
     .sdk-version{
       padding-left:20px;
+    }
+    .update-action {
+    color: #4d94ff;
+    font-size: 13px;
+    cursor: pointer;
+    }
+    .update-action:active {
+        color: #003d99;
+    }
+    .update-action:focus {outline:0;}
+    .link {
+    text-decoration: none !important;
+    }
+    .bold{
+      color: black;
+      font-weight: bold;
     }
   </style>
   </head>
@@ -81,10 +95,11 @@ This source code is a part of the Freshdesk SDK and is covered by the our licens
           <span class="dev">{ developers }</span>
         </div>
 
-        <div class="extn-dtls">
-          <span id="browser-extn-version"></span>
-          <span id="sdk-version"></span>
-        </div>
+        <div id="browser-extn-version"></div>
+        <div id="extn-download"></div>
+        <br>
+        <div id="sdk-version"></div>
+        <div id="sdk-command"></div>
       </div>
 
     </div>
