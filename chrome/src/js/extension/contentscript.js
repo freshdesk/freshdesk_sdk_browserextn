@@ -32,7 +32,9 @@ var ContentScript = Class.create({
         case "EXTN_BIND_RESPONSE":
           jQuery("#fa-dev-pholder").onAvailable(function() {
             //this injects the app code in helpkit's fa-dev-pholder and make it to visible state
-            jQuery(this).html(message.res).show();
+            var messageContent = JSON.parse(message.res);
+            localStorage.setItem("fa_appName", messageContent['appName']);
+            jQuery(this).html(messageContent['content']).show();
           });
           break;
       }

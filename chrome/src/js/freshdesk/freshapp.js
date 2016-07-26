@@ -3,9 +3,17 @@ This source code is a part of the Freshdesk SDK and is covered by the our licens
 
 var LocalTesting = Class.create({
   run: function(callback){
+    var appName = localStorage.getItem("fa_appName");
+    var execCallback = callback +
+    `
+    Freshapp.exec({
+      'content' : ${appName},
+      'appName' : '${appName}'
+    })
+    `
     var msg = {
       type: "EXTN_SDK_DEV",
-      callback: String(callback)
+      callback: execCallback
     }
     window.postMessage(msg, "*");
   }
