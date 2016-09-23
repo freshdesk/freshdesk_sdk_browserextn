@@ -1,3 +1,3 @@
-## Freshapps SDK Browser Extensions
+## Freshdesk SDK Browser Extensions
 
-Freshapps SDK browser extensions source code.
+[Freshdesk SDK](http://developer.freshdesk.com/docs/sdk/) browser extensions source code.
