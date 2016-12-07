@@ -1,7 +1,8 @@
 {
-  "name": "freshdesk-developer-extension",
+  "name": "freshdesk_sdk_browserextn",
   "version": "0.0.0",
   "description": "A chrome extension for testing Freshplugs",
+  "license": "ISC",
   "dependencies": {
     "gulp-install": "^0.6.0"
   },

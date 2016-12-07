@@ -1,0 +1,2 @@
+The dependencies for the project are governed by their respective
+licenses and you would be required to comply with them.
